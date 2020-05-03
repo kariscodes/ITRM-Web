@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+/* 공통레이아웃 */
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,tr,td,thead,tbody,form,fieldset,legend,select,input,textarea,button {
+    margin: 0;
+    padding: 0;
+    font-family: "Nanum Gothic", sans-serif;
+    font-size:13px;
+}
+
+ul,ol,li,dl,dt,dd {
+    list-style: none;
+}
+
+i,em,address {
+    font-style: normal;
+}
+
+label,button {
+    cursor: pointer;
+}
+
+legend {
+    position: absolute;
+    top: 0;
+    left: -1000%;
+    width: 1px;
+    height: 1px;
+    line-height: 0;
+    overflow: hidden;
+    font-size: 0;
+}
+
+fieldset,img {
+    border: 0;
+}
+
+caption {
+    line-height: 0;
+    font-size: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+input,select,button,textarea {
+    vertical-align:middle;
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    padding: 0;
+    border-spacing: 0;
+}
+
+#logo h1 {
+    font-size: 45px;
+    color: #015878;
+}
+
+#tagline h3 {
+    font-size: 24px;
+    color: #444444;
+}
+
+#header .top-nav {
+    height:28px;
+    padding: 1px 0 4px;
+    border-top: 2px solid #d1372d;
+    border-bottom: 1px solid #ededed;
+    background-color: #f7f7f7;
+}
+
+#header .top-nav ul {
+    text-align: right;
+    padding-top:8px;
+}
+
+#header .top-nav ul li {
+    display: inline-block;
+    padding-left: 15px;
+/*    background: url(../images/split_top.gif) no-repeat 5px 2px;*/
+}
+
+/*#header .top-nav ul li:first-child { padding-left: 0; background: none; }*/
+#header .top-nav ul li a {
+    font-size: 12px;
+    color: #777;
+}
+
+#header .top-nav ul li a:hover {
+    color: #000;
+    font-size: 12px;
+}
+
+#header .main-nav {
+    display: block;
+    z-index: 9999;
+/*    position: absolute;*/
+    border-bottom: 1px solid #d6d6d6;
+    width: 100%;
+    min-width: 1000px;
+    height: 72px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/*header .main-nav h1 { padding: 21px 0;}*/
+ul#menu {
+    list-style: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+ul#menu li a {
+    font-size: 20px;
+    color: #676666;
+    text-decoration: none;
+}
+
+ul#menu li {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#content {
+    width: 750px;
+    float: left;
+}
+
+#content h2 {
+    font-size: 36px;
+    color: #015878;
+    padding-top: 25px;
+}
+
+#content h3 {
+    font-size: 20px;
+    color: #444444;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+#content h4 {
+    font-size: 16px;
+    color: #373737;
+    font-weight: normal;
+}
+
+#content p {
+    font-size: 14px;
+    color: #595858;
+    padding-top: 20px;
+}
+
+#content small {
+    font-size: 12px;
+    color: #373737;
+}
+
+#content a {
+    color: #0f6c8d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#sidebar {
+    float: left;
+/*
+    background: #d4d6d3;
+    border: 1px solid #BEBDBD;
+    padding: 15px;
+*/
+}
+
+#sidebar .login {
+    background: #d4d6d3;
+    border: 1px solid #BEBDBD;
+    padding: 15px;
+}
+
+#sidebar h3 {
+    font-size: 24px;
+    color: #044055;
+    font-weight: normal;
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#footer {
+/*    background: url(images/footer_slice.jpg) repeat-x;*/
+    background-color: gray;
+    padding-top: 5px;
+    padding-bottom:5px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+#contact {
+    clear:both;
+    position:relative;
+    padding-top:20px;
+}
+
+/* login */
+#sidebar .login {
+    clear:both;
+    float:left;
+    margin-top:30px;
+    position:relative;
+    width:200px;
+    padding-right:20px;
+}
+#sidebar .login h3 {
+    font-size:24px;
+    padding-bottom:10px;
+}
+/*
+#sidebar .login .save {
+    position:absolute;
+    top:0; right:20px;
+    font-size:11px;
+    color:#777;
+}
+*/
+#sidebar .login .id {
+    border:solid 1px #ddd;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:#999;
+}
+#sidebar .login .pw {
+    border:solid 1px #ddd;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top:none;
+    color:#999;
+}
+#sidebar .login ul {
+    text-align:center;
+}
+#sidebar .login li {
+    display:inline-block;
+    padding:0 10px;
+    font-size:12px;
+    color:#666;
+    margin-top:10px;
+}
+#sidebar .login li.fir {
+    border-right:dotted 1px #bbb;
+}
+#sidebar .login btn-login {
+    display: inline-block;
+    padding:10px 0;
+    margin-top:10px;
+    width:100%;
+    text-align:center;
+    font-size:13px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #19196a;
+    background:#19196a;
+    border-radius:5px;
+}
+#sidebar .login btn-login:hover{ background:#466686; border: 1px solid #3170af;}
+#sidebar .login input.btn-login {
+    display: inline-block; padding:10px 0;margin-top:10px; width:100%; text-align:center;
+    font-size:13px; font-weight: 600; color: #fff; border: 1px solid #212189;
+    background:#212189; border-radius:5px;}
