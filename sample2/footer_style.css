@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.container {
+/*    width: 1000px;*/
+    margin: 0 auto;
+}
+
+#footer {
+/*    background: url(images/footer_slice.jpg) repeat-x;*/
+    background-color: gray;
+    padding-top: 5px;
+    padding-bottom:5px;
+    margin-left: 0px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 12px;
+}
